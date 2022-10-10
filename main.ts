@@ -19,6 +19,8 @@ basic.forever(function () {
     }
     if (clark.isTouching(lex)) {
         for (let index = 0; index < 3; index++) {
+            lex.delete()
+            clark.delete()
             basic.showIcon(IconNames.Yes)
             basic.pause(500)
             basic.clearScreen()
